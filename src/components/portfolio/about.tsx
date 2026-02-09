@@ -3,7 +3,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Briefcase, Award, Users, Code2, Database } from "lucide-react";
+import { GraduationCap, Briefcase, Award, Users, Code2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const metrics = [
@@ -23,7 +23,7 @@ const timeline = [
     color: "bg-primary",
   },
   {
-    year: "2023",
+    year: "2024",
     title: "NULLCLASS",
     role: "Ex-Intern",
     description: "Intensive training and hands-on experience with MERN stack development projects.",
@@ -31,12 +31,20 @@ const timeline = [
     color: "bg-secondary",
   },
   {
-    year: "2023",
+    year: "2023 - 2024",
+    title: "Independent",
+    role: "Ex-Freelancer",
+    description: "Delivered custom web applications and technical solutions for independent clients as a freelance developer.",
+    icon: Briefcase,
+    color: "bg-accent",
+  },
+  {
+    year: "2024",
     title: "Parul University",
     role: "Ex-Graduate (MCA)",
     description: "Advanced Master's degree in Computer Applications with a focus on core software engineering principles.",
     icon: GraduationCap,
-    color: "bg-accent",
+    color: "bg-primary",
   },
 ];
 
@@ -57,7 +65,7 @@ export function About() {
             <p className="text-xl text-muted-foreground font-light mb-12 leading-relaxed">
               I am a driven MERN stack developer with a passion for building scalable, 
               high-performance web applications. My journey started at Parul University, 
-              sharpened during my internship at NULLCLASS, and is currently thriving at Startek. 
+              sharpened through freelancing and internships, and is currently thriving at Startek. 
               I blend technical rigor with a data-driven mindset to solve complex problems.
             </p>
 

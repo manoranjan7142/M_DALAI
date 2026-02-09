@@ -9,8 +9,8 @@ const experiences = [
   {
     company: "Startek",
     role: "Process Specialist / Tech Support",
-    location: "Pune, India",
-    period: "Feb 2024 - Present",
+    location: "Bangalore, India",
+    period: "Dec 2024 - Present",
     description: "Handling technical processes, troubleshooting infrastructure issues, and maintaining operational workflows for high-value clients.",
     achievements: ["Consistent top performer", "Resolved 500+ complex technical tickets", "Optimized process workflow"]
   },
@@ -18,7 +18,7 @@ const experiences = [
     company: "NULLCLASS",
     role: "Full Stack Developer Intern",
     location: "Remote",
-    period: "Jun 2023 - Nov 2023",
+    period: "Jun 2024 - Nov 2024",
     description: "Developed and deployed multiple full-stack applications using MERN stack. Focused on clean code and RESTful API architecture.",
     achievements: ["Built 3 live projects", "Improved database queries by 30%", "Mentored junior interns"]
   }
@@ -53,7 +53,7 @@ export function Experience() {
                 <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
               <a 
-                href="https://learn.microsoft.com/en-us/users/manoranjandalai-6045/credentials/1fcfa1cb67490fb4"
+                href="https://www.skills.google/public_profiles/798a4377-c93b-4517-a1e0-0e0e6239267b"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 glass rounded-xl border border-white/5 hover:border-secondary/30 transition-all group"
@@ -64,6 +64,19 @@ export function Experience() {
                   <p className="text-[10px] text-muted-foreground uppercase tracking-widest">View Credential</p>
                 </div>
                 <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-secondary transition-colors" />
+              </a>
+              <a 
+                href="https://www.credly.com/badges/2bdd1b41-dd10-4de3-9249-4b5e12d5a6f6/public_url"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 glass rounded-xl border border-white/5 hover:border-accent/30 transition-all group"
+              >
+                <Award className="w-5 h-5 text-accent" />
+                <div className="flex-1">
+                  <p className="text-sm font-bold text-white">IBM Web Dev</p>
+                  <p className="text-[10px] text-muted-foreground uppercase tracking-widest">View Credential</p>
+                </div>
+                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-accent transition-colors" />
               </a>
             </div>
           </div>

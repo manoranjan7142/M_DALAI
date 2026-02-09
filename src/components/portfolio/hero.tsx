@@ -6,18 +6,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, MousePointer2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const typingVariants = {
-  hidden: { opacity: 0 },
-  visible: (i: number) => ({
-    opacity: 1,
-    transition: {
-      delay: i * 0.05,
-    },
-  }),
-};
-
 export function Hero() {
-  const roles = ["MERN Stack Developer", "Tech Support Engineer", "Data Analytics Enthusiast"];
+  const roles = ["MERN Stack Developer", "Tech Support Engineer", "Freelancer", "Data Analytics Enthusiast"];
   const [roleIndex, setRoleIndex] = React.useState(0);
 
   React.useEffect(() => {

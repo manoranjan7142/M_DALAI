@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Manoranjan Dalai | Neon Ascent Portfolio',
+  title: 'Manoranjan Dalai',
   description: 'MERN Stack Developer, Tech Support, and Data Analytics expert. Explore the futuristic portfolio of Manoranjan Dalai.',
 };
 
