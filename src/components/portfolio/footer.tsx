@@ -1,11 +1,14 @@
-
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Terminal, Heart } from "lucide-react";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="py-12 border-t border-white/5 relative overflow-hidden">
@@ -28,7 +31,7 @@ export function Footer() {
 
           <div className="flex flex-col items-center md:items-end gap-1">
             <p className="text-sm text-muted-foreground flex items-center gap-1.5">
-              © {currentYear} Handcrafted with <Heart className="w-4 h-4 text-accent fill-accent" /> by Manoranjan Dalai
+              © {currentYear || "2025"} Handcrafted with <Heart className="w-4 h-4 text-accent fill-accent" /> by Manoranjan Dalai
             </p>
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary/50">
               Built with MERN Stack Principles
