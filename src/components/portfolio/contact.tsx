@@ -3,15 +3,16 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Send, Mail, Phone, MapPin, Linkedin, Github, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "Github" },
-  { icon: Linkedin, href: "#", label: "Linkedin" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: "https://github.com/manoranjan7142", label: "Github" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/manoranjan-dalai-592825173", label: "Linkedin" },
+  { icon: Instagram, href: "https://www.instagram.com/rk_manojd2089", label: "Instagram" },
+  { icon: MessageCircle, href: "https://wa.me/message/U3SFJMRQDZ7NI1", label: "WhatsApp" },
 ];
 
 export function Contact() {
@@ -41,7 +42,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground uppercase tracking-widest">Email</p>
-                    <p className="text-lg font-bold">manoranjan.dalai@example.com</p>
+                    <p className="text-lg font-bold">manojdalai7142@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 group cursor-pointer">
@@ -50,7 +51,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground uppercase tracking-widest">Phone</p>
-                    <p className="text-lg font-bold">+91 98765 43210</p>
+                    <p className="text-lg font-bold">+91 9556280233</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 group cursor-pointer">
@@ -59,7 +60,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground uppercase tracking-widest">Location</p>
-                    <p className="text-lg font-bold">Pune, India</p>
+                    <p className="text-lg font-bold">Bangalore, India</p>
                   </div>
                 </div>
               </div>
@@ -69,7 +70,10 @@ export function Contact() {
                   <a
                     key={social.label}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-4 glass rounded-full hover:scale-110 hover:shadow-neon-teal hover:border-primary transition-all"
+                    title={social.label}
                   >
                     <social.icon className="w-5 h-5" />
                   </a>

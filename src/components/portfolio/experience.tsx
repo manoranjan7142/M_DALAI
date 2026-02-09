@@ -3,7 +3,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { MapPin, Calendar, Building2 } from "lucide-react";
+import { MapPin, Calendar, Building2, Award, ExternalLink } from "lucide-react";
 
 const experiences = [
   {
@@ -33,9 +33,39 @@ export function Experience() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tighter">
               Professional <br /> <span className="text-primary italic">Timeline_</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed mb-8">
               A brief overview of my professional path, moving from intensive learning to corporate excellence.
             </p>
+
+            <div className="space-y-4">
+              <h4 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">Certifications</h4>
+              <a 
+                href="https://learn.microsoft.com/en-us/users/manoranjandalai-6045/credentials/1fcfa1cb67490fb4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 glass rounded-xl border border-white/5 hover:border-primary/30 transition-all group"
+              >
+                <Award className="w-5 h-5 text-primary" />
+                <div className="flex-1">
+                  <p className="text-sm font-bold text-white">Microsoft Certified</p>
+                  <p className="text-[10px] text-muted-foreground uppercase tracking-widest">View Credential</p>
+                </div>
+                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a 
+                href="https://learn.microsoft.com/en-us/users/manoranjandalai-6045/credentials/1fcfa1cb67490fb4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 glass rounded-xl border border-white/5 hover:border-secondary/30 transition-all group"
+              >
+                <Award className="w-5 h-5 text-secondary" />
+                <div className="flex-1">
+                  <p className="text-sm font-bold text-white">Google Skills</p>
+                  <p className="text-[10px] text-muted-foreground uppercase tracking-widest">View Credential</p>
+                </div>
+                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-secondary transition-colors" />
+              </a>
+            </div>
           </div>
 
           <div className="md:w-2/3 space-y-8">
