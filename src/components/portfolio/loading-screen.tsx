@@ -1,12 +1,13 @@
-
 "use client";
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Terminal } from "lucide-react";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function LoadingScreen() {
   const [progress, setProgress] = useState(0);
+  const avatar = PlaceHolderImages.find(img => img.id === "avatar-manoranjan");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,8 +32,17 @@ export function LoadingScreen() {
         className="relative z-10 flex flex-col items-center"
       >
         <div className="mb-8 relative">
-          <div className="p-6 rounded-3xl glass border border-primary/20 shadow-neon-teal">
-            <Terminal className="w-12 h-12 text-primary" />
+          <div className="p-1 rounded-full glass border-2 border-primary/20 shadow-neon-teal overflow-hidden w-24 h-24 flex items-center justify-center">
+            {avatar && (
+              <Image 
+                src={avatar.imageUrl}
+                alt="Manoranjan Dalai"
+                width={96}
+                height={96}
+                className="rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                priority
+              />
+            )}
           </div>
           <motion.div
             animate={{ rotate: 360 }}
