@@ -3,10 +3,8 @@
 
 import React, { useEffect, useState } from "react";
 import { 
-  Command, 
   Terminal, 
   User, 
-  Code, 
   Briefcase, 
   Mail, 
   Search,
@@ -21,7 +19,6 @@ const actions = [
   { icon: Terminal, name: "Home", shortcut: "H", href: "#top" },
   { icon: User, name: "About Me", shortcut: "A", href: "#about" },
   { icon: Zap, name: "Skills", shortcut: "S", href: "#skills" },
-  { icon: Code, name: "Projects", shortcut: "P", href: "#projects" },
   { icon: Briefcase, name: "Experience", shortcut: "E", href: "#experience" },
   { icon: Mail, name: "Contact", shortcut: "C", href: "#contact" },
 ];
